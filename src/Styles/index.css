@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Lux-Montag";
+  src: local("Lux-Montag"), url("./Fonts/Lux-Montag.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lux-Montag";
+  /* overscroll-behavior-y: contain; */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #850d11;
+  z-index: -4;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 13vh;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #292929;
+}
+
+.icon {
+  width: 11vh;
+  position: absolute;
+  top: 1vh;
+  left: 10px;
+}
+
+.title {
+  font-size: 20pt;
+  color: #ffffff;
+  position: absolute;
+  width: 80%;
+  left: 15%;
+  top: 30%;
+  text-align: center;
+}
+
+.home {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+  height: 80vh;
+  top: 15vh;
+  left: 5vw;
+}
+
+.home-btn {
+  width: 60%;
+  height: 8%;
+  border: none;
+  border-radius: 17px;
+  background-color: #292929;
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+.dates {
+  position: fixed;
+  width: 90vw;
+  height: 80vh;
+  top: 15vh;
+  left: 5vw;
+}
+
+.select {
+  position: absolute;
+  width: 30%;
+  height: 5%;
+  left: 35%;
+  top: 5%;
+  border: none;
+  border-radius: 17px;
+  text-align: center;
+  font-size: 12pt;
+}
