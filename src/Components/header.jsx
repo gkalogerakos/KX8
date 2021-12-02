@@ -1,9 +1,10 @@
 import React from "react";
 import logo_i from "../Images/logo512.png";
 
-export default function Header({ route, setRoute }) {
+export default function Header({ route, setRoute, navigate }) {
   const homePage = () => {
     setRoute("ΚΧΘ");
+    navigate("/home");
   };
   return (
     <div className="header">

@@ -66,9 +66,10 @@
   justify-content: space-evenly;
   align-items: center;
   width: 90vw;
-  height: 80vh;
-  top: 15vh;
+  height: 90vh;
+  top: 8vh;
   left: 5vw;
+  z-index: -3;
 }
 
 .home-btn {
@@ -99,4 +100,67 @@
   border-radius: 17px;
   text-align: center;
   font-size: 12pt;
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+}
+
+.event {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background-color: #292929;
+  border-top: 2px solid #850d11;
+  border-left: 2px solid #850d11;
+  border-right: 2px solid #850d11;
+}
+.first {
+  top: 0%;
+}
+
+.second {
+  top: 10%;
+}
+
+.party {
+  top: 20%;
+}
+
+.third {
+  top: 30%;
+}
+
+.parade {
+  top: 40%;
+}
+
+.awards {
+  top: 50%;
+}
+
+.trip {
+  top: 60%;
+  border-bottom: 2px solid #850d11;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #850d11;
+  color: white;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }

@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function Home({ setRoute }) {
+export default function Home({ setRoute, navigate }) {
   const handleClick = (e) => {
     switch (e.target.id) {
       case "dates":
         setRoute("ΗΜΕΡΟΜΗΝΙΕΣ");
+        navigate("/dates");
         break;
       case "anagram":
         setRoute("ΑΝΑΓΡΑΜΑΤΙΣΜΟΣ");
