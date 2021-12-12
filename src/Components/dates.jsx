@@ -51,7 +51,7 @@ export default function Dates() {
       </select>
       <div className="container">
         <div className="first event">
-          <div className="text">Προπομός</div>
+          <div className="text">Προπομπός</div>
           <div className="date">
             {kx8dates.first.date + "/" + kx8dates.first.month}
           </div>

@@ -164,3 +164,43 @@
   align-items: center;
   color: white;
 }
+
+.street-letters {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 90vw;
+  height: 80vh;
+  top: 15vh;
+  left: 5vw;
+}
+
+.results-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  border-radius: 17px;
+  background-color: #292929;
+}
+
+.overflow {
+  height: 88%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.results {
+  text-align: justify;
+  color: white;
+}
+
+.results > p {
+  padding: 5px;
+}

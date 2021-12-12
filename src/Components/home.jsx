@@ -9,12 +9,15 @@ export default function Home({ setRoute, navigate }) {
         break;
       case "anagram":
         setRoute("ΑΝΑΓΡΑΜΑΤΙΣΜΟΣ");
+        navigate("/anagram");
         break;
       case "streets":
         setRoute("ΓΡΑΜΜΑΤΑ ΔΡΟΜΩΝ");
+        navigate("/streetletters");
         break;
       case "caesar":
         setRoute("ΚΩΔΙΚΑΣ ΚΑΙΣΑΡΑ");
+        navigate("/caesarcipher");
         break;
       default:
         setRoute("ΚΧΘ");
