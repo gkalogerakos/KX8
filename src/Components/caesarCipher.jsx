@@ -111,6 +111,13 @@ export default function CaesarCipher() {
     setOutput(text);
   };
 
+  const keyPressed = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.target.blur();
+    }
+  };
+
   const doNothing = (e) => {};
 
   const blur = (e) => {
@@ -135,9 +142,10 @@ export default function CaesarCipher() {
         placeholder="Αρχικό κείμενο"
         value={input}
         onChange={handleChange}
+        onKeyPress={keyPressed}
       />
       <div className="key-container">
-        <button className="down" onClick={down}>
+        <button className="down unselectable" onClick={down}>
           ⇓
         </button>
         <input
@@ -148,7 +156,7 @@ export default function CaesarCipher() {
           onChange={doNothing}
         />
 
-        <button className="up" onClick={up}>
+        <button className="up unselectable" onClick={up}>
           ⇑
         </button>
       </div>

@@ -9,13 +9,24 @@ import CaesarCipher from "./Components/caesarCipher.jsx";
 import roads from "./Data/roads.json";
 
 function App() {
-  const [route, setRoute] = useState("ΚΧΘ");
+  const [route, setRoute] = useState("");
   let navigate = useNavigate();
   let location = useLocation();
 
   useEffect(() => {
     if (location.pathname === "/") {
       navigate("/home");
+    }
+    if (location.pathname === "/home") {
+      setRoute("ΚΧΘ");
+    } else if (location.pathname === "/dates") {
+      setRoute("ΗΜΕΡΟΜΗΝΙΕΣ");
+    } else if (location.pathname === "/anagram") {
+      setRoute("ΑΝΑΓΡΑΜΑΤΙΣΜΟΣ");
+    } else if (location.pathname === "/streetletters") {
+      setRoute("ΓΡΑΜΜΑΤΑ ΔΡΟΜΩΝ");
+    } else if (location.pathname === "/caesarcipher") {
+      setRoute("ΚΩΔΙΚΑΣ ΚΑΙΣΑΡΑ");
     }
   }, [location.pathname, navigate]);
 
@@ -29,7 +40,7 @@ function App() {
           element={<Home setRoute={setRoute} navigate={navigate} />}
         ></Route>
         <Route path="/dates" element={<Dates />}></Route>
-        <Route path="/anagram" element={<Anagram />}></Route>
+        <Route path="/anagram" element={<Anagram roads={roads} />}></Route>
         <Route
           path="/streetletters"
           element={<StreetLetters roads={roads} />}
