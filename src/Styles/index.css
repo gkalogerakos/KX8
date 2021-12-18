@@ -204,3 +204,96 @@
 .results > p {
   padding: 5px;
 }
+
+.caesar-cipher {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 90vw;
+  height: 80vh;
+  top: 15vh;
+  left: 5vw;
+  /* background-color: blue; */
+}
+
+.input {
+  position: absolute;
+  padding: 5pt;
+  top: 5%;
+  height: 30%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 17px;
+  resize: none;
+}
+
+.key-container {
+  position: absolute;
+  top: 41%;
+  height: 6%;
+  width: 100%;
+}
+
+.down {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+  height: 100%;
+  width: 15%;
+  font-size: 15pt;
+  text-align: center;
+  border: none;
+  border-radius: 17px;
+  background-color: #292929;
+  color: white;
+}
+
+.key {
+  position: absolute;
+  top: 45%;
+  left: 42.5%;
+  height: 100%;
+  width: 15%;
+  font-size: 15pt;
+  text-align: center;
+  outline: none;
+  border: 1px solid #292929;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.up {
+  position: absolute;
+  top: 45%;
+  left: 63%;
+  height: 100%;
+  width: 15%;
+  font-size: 15pt;
+  text-align: center;
+  border: none;
+  border-radius: 17px;
+  background-color: #292929;
+  color: white;
+}
+
+.output {
+  position: absolute;
+  padding: 5pt;
+  top: 60%;
+  height: 30%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 17px;
+  resize: none;
+}
