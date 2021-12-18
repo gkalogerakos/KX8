@@ -90,27 +90,28 @@ export default function CaesarCipher() {
 
   const handleChange = () => {
     var text = document.getElementById("input").value.toUpperCase();
-
+    var greek = [];
     text = text.split("");
-    for (let i = 0; i < text.length; i++) {
-      if (text.indexOf(text[i]) !== -1) {
-        text[i] = alphabet[english.indexOf(text[i])];
-      }
-    }
-
-    setInput(text);
-    var newText = [];
     text.forEach((char) => {
+      if (english.indexOf(char) !== -1) {
+        greek.push(alphabet[english.indexOf(char)]);
+      } else {
+        greek.push(char);
+      }
+    });
+
+    var newText = [];
+    greek.forEach((char) => {
       if (char !== " ") newText.push(alphabet[alphabet.indexOf(char) + key]);
       else newText.push(" ");
     });
+    greek = greek.join("");
+    setInput(greek);
     text = newText.join("");
     setOutput(text);
   };
 
-  const doNothing = (e) => {
-    console.log("Α");
-  };
+  const doNothing = (e) => {};
 
   const blur = (e) => {
     e.target.blur();
