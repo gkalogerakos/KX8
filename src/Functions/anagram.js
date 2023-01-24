@@ -6,8 +6,10 @@ function getAnagrams(input, roads) {
     r = road;
     flag = true;
     input.forEach((char) => {
-      if (!r.includes(char)) flag = false;
-      else {
+      if (!r.includes(char)) {
+        flag = false;
+        console.log(r);
+      } else {
         r.replace(char, "");
         console.log(road);
         console.log(r);
