@@ -1,11 +1,15 @@
 function getAnagrams(input, roads) {
-  var flag;
+  var flag, r;
   var results = [];
   input = input.split("");
   roads.forEach((road) => {
+    r = road;
     flag = true;
     input.forEach((char) => {
-      if (!road.includes(char)) flag = false;
+      if (!r.includes(char)) flag = false;
+      else {
+        r.replace(char, "");
+      }
     });
     if (flag) results.push(road);
   });
