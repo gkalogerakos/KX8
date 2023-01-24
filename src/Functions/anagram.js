@@ -9,6 +9,8 @@ function getAnagrams(input, roads) {
       if (!r.includes(char)) flag = false;
       else {
         r.replace(char, "");
+        console.log(road);
+        console.log(r);
       }
     });
     if (flag) results.push(road);
