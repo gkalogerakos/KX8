@@ -10,7 +10,7 @@ function getAnagrams(input, roads) {
         flag = false;
         console.log(r);
       } else {
-        r.replace(char, "");
+        r = r.replace(char, "");
         console.log(road);
         console.log(r);
       }
