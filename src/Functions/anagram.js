@@ -8,11 +8,8 @@ function getAnagrams(input, roads) {
     input.forEach((char) => {
       if (!r.includes(char)) {
         flag = false;
-        console.log(r);
       } else {
         r = r.replace(char, "");
-        console.log(road);
-        console.log(r);
       }
     });
     if (flag) results.push(road);
