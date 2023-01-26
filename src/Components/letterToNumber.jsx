@@ -114,8 +114,11 @@ export default function LetterToNumber({ setRoute, navigate }) {
       } else if (inp <= 26 && inp > 0) {
         setNumber(inp);
         setEnLetter(english[parseInt(inp) - 1]);
-      } else if (inp > 26) {
+      } else if (inp > 26 && inp > 0) {
         inp = inp % 10;
+        if (inp === 0) {
+          inp = 1;
+        }
         setNumber(inp);
         setGrLetter(alphabet[parseInt(inp) - 1]);
         setEnLetter(english[parseInt(inp) - 1]);
