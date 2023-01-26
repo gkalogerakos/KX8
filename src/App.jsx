@@ -6,6 +6,7 @@ import Dates from "./Components/dates.jsx";
 import Anagram from "./Components/anagram.jsx";
 import StreetLetters from "./Components/streetLetters.jsx";
 import CaesarCipher from "./Components/caesarCipher.jsx";
+import LetterToNumber from "./Components/letterToNumber";
 import roads from "./Data/roads.json";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           element={<StreetLetters roads={roads} />}
         ></Route>
         <Route path="/caesarcipher" element={<CaesarCipher />}></Route>
+        <Route path="/lettertonumber" element={<LetterToNumber />}></Route>
       </Routes>
     </div>
   );

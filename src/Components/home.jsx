@@ -19,6 +19,10 @@ export default function Home({ setRoute, navigate }) {
         setRoute("ΚΩΔΙΚΑΣ ΚΑΙΣΑΡΑ");
         navigate("/caesarcipher");
         break;
+      case "letterToNumber":
+        setRoute("ΓΡΑΜΜΑ ↔ ΑΡΙΘΜΟΣ");
+        navigate("/lettertonumber");
+        break;
       default:
         setRoute("ΚΧΘ");
     }
@@ -37,6 +41,9 @@ export default function Home({ setRoute, navigate }) {
       </button>
       <button className="home-btn" id="caesar" onClick={handleClick}>
         ΚΩΔΙΚΑΣ ΚΑΙΣΑΡΑ
+      </button>
+      <button className="home-btn" id="letterToNumber" onClick={handleClick}>
+        ΓΡΑΜΜΑ &#8596; ΑΡΙΘΜΟΣ
       </button>
       {/* <button className="home-btn"></button> */}
     </div>

@@ -55,7 +55,7 @@ const alphabet = [
 const english = [
   "A",
   "B",
-  "G",
+  "",
   "D",
   "E",
   "Z",
